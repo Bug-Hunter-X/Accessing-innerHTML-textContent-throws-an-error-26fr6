@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect way to access the innerHTML of a div element, causing an error
+    let divContent = document.getElementById("myDiv").innerHTML.textContent;
+    console.log(divContent); //This will throw an error, since innerHTML is a string already
+  </script>
+</body>
+</html>
